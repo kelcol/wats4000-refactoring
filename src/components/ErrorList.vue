@@ -25,12 +25,12 @@ export default {
 </script>
 
 <style scoped>
+
 .errors li {
   color: red;
   border: solid red 1px;
   padding: 5px;
 }
-
 
 </style>
 

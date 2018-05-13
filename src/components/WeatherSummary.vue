@@ -17,12 +17,14 @@ export default {
     }
   },
   props: {
-    weatherData: [],
+    weatherData: {},
   }
 
 }
 </script>
 
 <style>
-
+.weatherSummary {
+  display: inline-block;
+  }
 </style>

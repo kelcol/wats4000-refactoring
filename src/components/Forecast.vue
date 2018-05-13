@@ -9,8 +9,9 @@
         <span v-if="weatherData"> for {{ weatherData.city.name }}, {{weatherData.city.country }}</span>
       </router-link>
     </p>
-    <ul v-if="weatherData && errors.length===0" class="forecast">
+    <ul v-if="weatherData && errors.length===0" class="forecast">      
       <li v-for="forecast in weatherData.list">
+        <h3>{{ forecast.dt|formatDate }}</h3>
         <weather-summary v-bind:weatherData="forecast.weather"></weather-summary>
         <weather-data v-bind:weatherData="forecast.main"></weather-data>
       </li>
@@ -84,11 +85,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.errors li {
-  color: red;
-  border: solid red 1px;
-  padding: 5px;
-}
+
 h1, h2 {
   font-weight: normal;
 }
@@ -109,10 +106,7 @@ li {
 a {
   color: #42b983;
 }
-.weatherSummary {
-  display: inline-block;
-  width: 100px;
-}
+
 </style>
 
 

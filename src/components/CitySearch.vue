@@ -9,7 +9,7 @@
     </form>
     <ul class="cities" v-if="results && results.list.length > 0">
       <li v-for="city in results.list">
-        <h2>{{ city.name }}, {{ city.sys.state }}</h2>
+        <h2>{{ city.name }}, {{ city.sys.country }}</h2>
         <p>
           <router-link v-bind:to="{ name: 'CurrentWeather', params: { cityId: city.id } }">View Current Weather</router-link>
         </p>
@@ -66,11 +66,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.errors li {
-  color: red;
-  border: solid red 1px;
-  padding: 5px;
-}
+
 h1, h2 {
   font-weight: normal;
 }
@@ -87,7 +83,6 @@ li {
   padding: 10px;
   margin: 5px;
 }
-
 
 a {
   color: #42b983;
