@@ -39,11 +39,19 @@ the application in the future.
 - [X] Create child components that can accept weather information and produce a well-formatted display.
 - [X] Use the child components in each of the views to eliminate the redundant HTML and CSS styles used.
 - [X] Create a child component called `ErrorList` to handle display of error messages. Replace the error message handling in the templates of the three parent components with this child component.
-- [ ] Clean up any extraneous code, comments, or files that are unused.
+- [x] Clean up any extraneous code, comments, or files that are unused.
 - [ ] Add comments where they would be helpful to improve the readability of the project.
-- [ ] Create a software architecture diagram for the software with revisions:
+- [X] Create a software architecture diagram for the software with revisions:
   * Show each component used in the application.
   * Indicate relationships between components.
+
+
+## Software Architecture Diagrams
+
+![Image](/static/images/before.jpg?raw=true)
+
+![Image](/static/images/after.jpg?raw=true)
+
 
 ## Stretch Goals
 If you crave an extra challenge, attempt these stretch goals:
@@ -73,9 +81,3 @@ npm run build --report
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 This project uses the [OpenWeatherMap.org API](https://openweathermap.org/).
-
-
-
-http://api.openweathermap.org/data/2.5/find?q=Seattle,+WA&units=imperial&APPID=8e5eadaad6674b9ea1e7e66f59794d34
-
-api.openweathermap.org/data/2.5/weather?q={city name}
